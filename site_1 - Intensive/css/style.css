@@ -1,0 +1,502 @@
+/*Спецификация*/
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #000;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+/*header*/
+header {
+    padding-bottom: 297px;
+    background: url(bg-1.png) no-repeat;
+}
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.header__menu-list {
+    display: flex;
+}
+
+.header__menu-list li {
+    display: block;
+    margin: 0 40px
+}
+
+.header__menu-list a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.header__menu-list a:hover {
+    color: #000;
+    
+}
+
+
+.header__btn-panel {
+    width: 121px;
+    height: 39px;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid #fff;
+    color: #fff;
+    transition: 124ms linear, transform 124ms linear;
+}
+
+.header__btn-panel:hover {
+    background-color: aqua;
+    transition: 124ms linear, transform 124ms linear;
+    
+}
+
+.header__content-container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 120px;
+}
+
+.header__intro {
+    padding-top: 87px;
+}
+
+.header__intro h1 {
+    font-size: 46px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.header__intro p {
+    font-size: 17px;
+    font-weight: 300;
+    color: #fff;
+    margin-top: 37px;
+    line-height: 24px;
+}
+
+.header__btn-detals {
+    height: 39px;
+    width: 173px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #0ea7eb;
+    margin-top: 40px;
+}
+
+.header__btn-detals:hover {
+     background-color: aqua;
+    transition: 124ms linear, transform 124ms linear;
+    color: aliceblue;
+}
+
+.header__img {
+    padding-top: 18px;
+}
+
+/*Section-raiting*/
+
+.raitings__container {
+    margin: 0 auto;
+    max-height: 500px;
+    text-align: center;
+    padding-bottom: 195px;
+    
+}
+
+.raitings__headline {
+    
+}
+
+h2 {
+    
+}
+.raiting__site {
+    margin-top: 85px;
+    display: flex;
+    align-items: baseline;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.raiting__site img {
+    opacity: 0.3;
+    transition: opacity 124ms linear, transform 124ms linear;
+}
+
+.raiting__img--up {
+    margin-bottom: 20px;
+}
+
+.raiting__site img:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/*Section-Tarif*/
+
+.tarif__container {
+    padding-bottom: 290px;
+}
+
+.tarif__button button {
+    padding: 10px 40px;
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 52px;
+}
+
+table {
+    margin-top: 30px;
+    border: 1px solid gray;
+    width: 1239px;
+    border-spacing: 0;
+    
+}
+
+table td {
+    padding: 20px;
+}
+
+.tarif__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+thead td{
+    color: #cccccc;
+    font-size: 17px;
+    padding: 13px 113px;
+    white-space: nowrap;
+}
+
+.tarif__td-name--mak {
+    font-weight: bold;
+    font-size: 30px;
+    color: #000;
+}
+
+.tarif__th--load, .tarif__th--site {
+    background-color: #f6f6f6;
+}
+
+.tarif__td-name--gb, .tarif__td-name--site, .tarif__td-name--bd, .tarif__td-name--load, .tarif__td-name--rub {
+    color: #7f7f7f;
+    font-size: 17px;
+}
+
+.tarif__td-name--rub {
+    font-weight: bold;
+    font-size: 30px;
+    color: #01e35a;
+    padding: 30px 0;
+}
+
+/*hover*/
+
+.tarif__td-name--host:hover {
+    background-color: #30aeec;
+    cursor: pointer;
+    color: #fff;
+}
+
+.tarif__td-name--cms:hover {
+    background-color: #30aeec;
+    cursor: pointer;
+    color: #fff;
+}
+
+.tarif__td-name--prem:hover {
+    background-color: #30aeec;
+    cursor: pointer;
+    color: #fff;
+}
+
+.tarif__td-name--vps:hover {
+    background-color: #30aeec;
+    cursor: pointer;
+    color: #fff;
+}
+
+/*Не смогу сделать так, чтобы при наведении на шапку таблицы выделялась вся колонка*/
+
+.tarif__button button {
+    background: #fff;
+    margin-left:  5px;
+}
+
+.tarif__button button:hover {
+    color: #30aeec;
+    box-shadow: 6px 5px 15px -1px rgba(0, 0, 0, 0.7);
+    transition: 124ms linear, transform 124ms linear;
+}
+
+
+/*Section-benefits*/
+
+.benefits__container {
+    padding-bottom: 185px;
+}
+
+.benefits__headline {
+    text-align: center;
+}
+
+.benefits__content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+    
+}
+
+.benefits__content--sub {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.benefits__content--sup {
+     display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-around;
+}
+
+.benefits__content-block {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.benefits__content-block h3 {
+    margin-top: 21px;
+}
+
+.benefits__content-block p {
+    color: #ccc;
+    font-size: 14px;
+    margin-top: 26px;
+    line-height: 24px;
+}
+    
+/*Section-domen*/
+
+.domen {
+    padding: 100px 0;
+    background-color: #f5f5f5;
+}
+
+.domen__headline h2 {
+        text-align: center;
+}
+
+.domen__search-form {
+    margin-top: 55px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+input[type="text"] {
+    width: 608px;
+    height: 55px;
+    border: 1px solid #d0cece;
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+.domen__search-btn {
+    height: 55px;
+    width: 176px;
+    background-color: #12c1f6;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    transition: 124ms linear, transform 124ms linear;
+}
+
+.domen__search-btn:hover {
+    transform: scale(1.08);
+    transition: 2s;
+    transition: 124ms linear, transform 124ms linear;
+}
+
+/*Section-reviews*/
+
+.reviews {
+    padding-bottom: 182px;
+    padding-top: 185px;
+}
+
+.reviews__headline {
+    text-align: center;
+}
+
+.reviews__content {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.reviews__block {
+    max-width: 500px;
+    border: 1px solid #e7e6e6;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    transition: 124ms linear, transform 124ms linear;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.reviews__block:hover {
+    box-shadow:-2px 2px 20px -5px rgba(0, 0, 0, 0.7);
+    transition: 124ms linear, transform 124ms linear;
+}
+
+.reviews__user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reviews__text {
+    font-size: 13px;
+    line-height: 24px;
+    color: #5f5f5f;
+    font-weight: 600;
+    margin-top: 30px;
+    width: 389px
+}
+
+.reviews__name {
+    margin-left: -80px;
+}
+
+.reviews__user-employment {
+    color: #c2c2c2;
+}
+
+.reviews__user-name {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 34px;
+}
+
+.reviews__review-data {
+    color: #c2c2c2;
+    line-height: 46px
+}
+
+/*bonus*/
+
+.bonus {
+    padding-bottom: 187px;
+}
+
+.bonus__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 24px;
+    justify-content: space-between;
+}
+
+.bonus__block p{
+    color: #ccc;
+    font-size: 14px;
+    margin-top: 38px;
+}
+.bonus__block h2 {
+    margin-top: 42px;
+}
+
+.bonus__btn {
+    height: 45px;
+    width: 193px;
+    background-color: #12c1f6;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+.bonus__btn:hover {
+    background-color: aqua;
+    color: black;
+}
+
+/*footer*/
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    min-width: 1400px;
+}
+
+footer {
+    background-color: #00adef;
+    padding-top: 108px;
+    padding-bottom: 187px;
+}
+
+.footer__content {
+    display: flex;
+    
+}
+.footer__detals-information {
+    display: flex;
+    justify-content: space-between;
+    min-width: 500px;
+
+}
+
+
+.footer__detals-information a {
+    font-size: 14px;
+    color: #d1d1d1;
+    line-height: 30px;
+}
+
+.footer__detals-information a:hover {
+    color: black;
+}
+
+.footer__head-li {
+    font-size: 16px!important;
+    color: #fff!important;
+    font-weight: 600!important;
+    margin-bottom: 20px;
+    
+}
+
+
