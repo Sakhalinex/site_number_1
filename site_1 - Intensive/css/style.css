@@ -44,10 +44,12 @@ header {
 .header__menu-list a {
     color: #fff;
     font-size: 14px;
+    transition: 124ms linear, transform 124ms linear;
 }
 
 .header__menu-list a:hover {
-    color: #000;
+    color: #d1d1d1;;
+    transition: 124ms linear, transform 124ms linear;
     
 }
 
@@ -62,7 +64,7 @@ header {
 }
 
 .header__btn-panel:hover {
-    background-color: aqua;
+    background-color: rgba(0,0,0,.3);
     transition: 124ms linear, transform 124ms linear;
     
 }
@@ -98,12 +100,13 @@ header {
     font-size: 14px;
     color: #0ea7eb;
     margin-top: 40px;
+    transition: 124ms linear, transform 124ms linear;
 }
 
 .header__btn-detals:hover {
-     background-color: aqua;
-    transition: 124ms linear, transform 124ms linear;
-    color: aliceblue;
+     background-color: rgba(1,1,1,.3);
+     transition: 124ms linear, transform 124ms linear;
+     color: #fff;
 }
 
 .header__img {
@@ -120,13 +123,6 @@ header {
     
 }
 
-.raitings__headline {
-    
-}
-
-h2 {
-    
-}
 .raiting__site {
     margin-top: 85px;
     display: flex;
@@ -163,82 +159,7 @@ h2 {
     margin-top: 52px;
 }
 
-table {
-    margin-top: 30px;
-    border: 1px solid gray;
-    width: 1239px;
-    border-spacing: 0;
-    
-}
 
-table td {
-    padding: 20px;
-}
-
-.tarif__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    
-}
-
-thead td{
-    color: #cccccc;
-    font-size: 17px;
-    padding: 13px 113px;
-    white-space: nowrap;
-}
-
-.tarif__td-name--mak {
-    font-weight: bold;
-    font-size: 30px;
-    color: #000;
-}
-
-.tarif__th--load, .tarif__th--site {
-    background-color: #f6f6f6;
-}
-
-.tarif__td-name--gb, .tarif__td-name--site, .tarif__td-name--bd, .tarif__td-name--load, .tarif__td-name--rub {
-    color: #7f7f7f;
-    font-size: 17px;
-}
-
-.tarif__td-name--rub {
-    font-weight: bold;
-    font-size: 30px;
-    color: #01e35a;
-    padding: 30px 0;
-}
-
-/*hover*/
-
-.tarif__td-name--host:hover {
-    background-color: #30aeec;
-    cursor: pointer;
-    color: #fff;
-}
-
-.tarif__td-name--cms:hover {
-    background-color: #30aeec;
-    cursor: pointer;
-    color: #fff;
-}
-
-.tarif__td-name--prem:hover {
-    background-color: #30aeec;
-    cursor: pointer;
-    color: #fff;
-}
-
-.tarif__td-name--vps:hover {
-    background-color: #30aeec;
-    cursor: pointer;
-    color: #fff;
-}
-
-/*Не смогу сделать так, чтобы при наведении на шапку таблицы выделялась вся колонка*/
 
 .tarif__button button {
     background: #fff;
@@ -247,9 +168,124 @@ thead td{
 
 .tarif__button button:hover {
     color: #30aeec;
-    box-shadow: 6px 5px 15px -1px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 18px 10px rgba(0, 0, 0, 0.1);
     transition: 124ms linear, transform 124ms linear;
 }
+
+.tarif__list {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 33px;
+    border: 1px solid #bababa;
+    max-width: 1178px;
+}
+
+.tarif__list-item {
+    display: flex;
+    flex-direction: column;
+}
+.tarif__item-name h1{
+    font-size: 16px;
+    font-weight: 400;
+    color: #cccccc;
+    letter-spacing: 0.4px;
+}
+
+.tarif__item-name {
+    
+}
+
+.tarif__item-mak h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #121212;
+    letter-spacing: 0.75px;
+}
+
+.item {
+    width: 294px;
+    height: 64px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tarif__list-item p {
+    font-size: 16px;
+    font-weight: 400;
+    /* Text style for "10 ГБ на S" */
+    color: #949494;
+    letter-spacing: 0.4px;
+}
+
+.tarif__item-mak {
+    padding-top: 53px;
+    padding-bottom: 31px
+}
+
+.tarif__item-price {
+    padding-top: 48px;
+    padding-bottom: 48px
+}
+
+.tarif__item-price h3 {
+    font-size: 34px;
+    font-weight: 700;
+    /* Text style for "219" */
+    color: #fff;
+}
+
+.tarif__item-progress,
+.tarif__item-site {
+    background-color: #f6f6f6;
+}
+
+.tarif__list-item {
+    transition: 1s;
+}
+
+.tarif__list-item:hover {
+    cursor: pointer;
+    box-shadow: 0 0 47px 2px rgba(0, 0, 0, 0.1);
+    transition: 124ms linear, transform 124ms linear;
+}
+
+.tarif__list-item:hover .tarif__item-name{
+    background-color: #30aeec;
+    transition: 124ms linear, transform 124ms linear;
+}
+
+.tarif__item-name {
+    transition: 124ms linear, transform 124ms linear;
+}
+
+.tarif__list-item:hover .tarif__item-name h1{
+    color: #fff;
+}
+
+
+.tarif__list-item:hover .tarif__item-mak h2  {
+    color: rgba(7, 195, 0, 0.88);
+    transition: 124ms linear, transform 124ms linear;
+}
+
+.tarif__item-mak h2 {
+    transition: 124ms linear, transform 124ms linear;
+}
+
+
+.tarif__list-item:hover .tarif__item-price h3  {
+    color: rgba(7, 195, 0, 0.88);
+    transition: 124ms linear, transform 124ms linear;
+}
+
+.tarif__item-price h3 {
+    transition: 124ms linear, transform 124ms linear;
+}
+
+
 
 
 /*Section-benefits*/
@@ -314,6 +350,7 @@ thead td{
     text-align: center;
     display: flex;
     justify-content: center;
+    position: relative;
     
 }
 
@@ -323,6 +360,25 @@ input[type="text"] {
     border: 1px solid #d0cece;
     font-size: 15px;
     padding-left: 15px;
+    border-right: 0;
+}
+
+.form-domen {
+    border: 1px solid #d0cece;
+    font-size: 15px;
+    font-weight: 800;
+    width: 119px;
+    padding-left: 15px;
+    border-left: 0;
+}
+
+.gran {
+    position: absolute;
+    height: 30px;
+    width: 1px;
+    background-color: #d0cece;
+    top: 24%;
+    left: 62.9%
 }
 
 .domen__search-btn {
@@ -443,11 +499,13 @@ input[type="text"] {
     color: #fff;
     font-weight: 600;
     margin-top: 40px;
+    transition: 124ms linear, transform 124ms linear;
 }
 
 .bonus__btn:hover {
-    background-color: aqua;
-    color: black;
+     background-color: rgba(1,1,1,.3);
+     transition: 124ms linear, transform 124ms linear;
+     color: #fff;
 }
 
 /*footer*/
@@ -485,10 +543,12 @@ footer {
     font-size: 14px;
     color: #d1d1d1;
     line-height: 30px;
+    transition: 124ms linear, transform 124ms linear;
 }
 
 .footer__detals-information a:hover {
-    color: black;
+     transition: 124ms linear, transform 124ms linear;
+     color: #fff;
 }
 
 .footer__head-li {
@@ -500,3 +560,11 @@ footer {
 }
 
 
+
+.tarif__headline {
+    text-align: center;
+}
+
+.tarif__button {
+    text-align: center;
+}
