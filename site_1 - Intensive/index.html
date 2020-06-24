@@ -9,7 +9,7 @@
     <!--Шрифты-->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <!--Media запросы-->
-    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="css/media.css">
     <!--Viewport-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -70,54 +70,98 @@
                     <button class="tarif__btn tarif__btn-month ">Оплата за месяц</button>
                 </div>
                 <div class="tarif__list">
-                    <table>
-                        <thead>
-                            <tr>
-                            <td class="tarif__td-name--host">Хостинг</td>
-                            <td class="tarif__td-name--cms">CMS Хостинг</td>
-                            <td class="tarif__td-name--prem">Премиум Хостинг</td>
-                            <td class="tarif__td-name--vps">VPS Хостинг</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="tarif__td-name--mak tarif__td-name--mak--3 ">Мак-3</td>
-                                <td class="tarif__td-name--mak tarif__td-name--mak--10">Мак-10</td>
-                                <td class="tarif__td-name--mak tarif__td-name--mak--15">Мак-15</td>
-                                <td class="tarif__td-name--mak tarif__td-name--mak--30">Мак-30</td>
-                            </tr>
-                            <tr>
-                                <td class="tarif__td-name--gb">3 ГБ на SSD</td>
-                                <td class="tarif__td-name--gb">10 ГБ на SSD</td>
-                                <td class="tarif__td-name--gb">15 ГБ на SSD</td>
-                                <td class="tarif__td-name--gb">30 ГБ на SSD</td>
-                            </tr>
-                            <tr class="tarif__th--site">
-                                <td class="tarif__td-name--site">1 сайт</td>
-                                <td class="tarif__td-name--site">5 сайтов</td>
-                                <td class="tarif__td-name--site">15 сайтов</td>
-                                <td class="tarif__td-name--site">40 сайтов</td>
-                            </tr>
-                            <tr>
-                                <td class="tarif__td-name--bd">1 база данных</td>
-                                <td class="tarif__td-name--bd">5 баз данных</td>
-                                <td class="tarif__td-name--bd">15 баз данных</td>
-                                <td class="tarif__td-name--bd">40 баз данных</td>
-                            </tr>
-                            <tr class="tarif__th--load">
-                                <td class="tarif__td-name--load">Нагрузка 5%</td>
-                                <td class="tarif__td-name--load">Нагрузка 12.5%</td>
-                                <td class="tarif__td-name--load">Нагрузка 25%</td>
-                                <td class="tarif__td-name--load">Нагрузка 50%</td>
-                            </tr>
-                            <tr>
-                                <td class="tarif__td-name--rub">113₽</td>
-                                <td class="tarif__td-name--rub">219₽</td>
-                                <td class="tarif__td-name--rub">349₽</td>
-                                <td class="tarif__td-name--rub">615₽</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                     <div class="tarif__list-item">
+                        <div class="item tarif__item-name">
+                            <h1>Хостинг</h1>
+                        </div>
+                        <div class="item tarif__item-mak">
+                            <h2>МАК-3</h2>
+                        </div>
+                        <div class="item tarif__item-gb">
+                            <p>3 ГБ на SSD</p>
+                        </div>
+                        <div class="item tarif__item-site">
+                            <p>1 сайт</p>
+                        </div>
+                        <div class="item tarif__item-bd">
+                            <p>1 база данных</p>
+                        </div>
+                        <div class="item tarif__item-progress">
+                            <p>Нагрузка 5%</p>
+                        </div>
+                        <div class="item tarif__item-price">
+                            <h3>113 ₽</h3>
+                        </div>
+                     </div>
+                     <div class="tarif__list-item">
+                        <div class="item tarif__item-name">
+                            <h1>СMS-Хостинг</h1>
+                        </div>
+                        <div class="item tarif__item-mak">
+                            <h2>Мак-10</h2>
+                        </div>
+                        <div class="item tarif__item-gb">
+                            <p>10 ГБ на SSD</p>
+                        </div>
+                        <div class="item tarif__item-site">
+                            <p>5 cайтов</p>
+                        </div>
+                        <div class="item tarif__item-bd">
+                            <p>5 база данных</p>
+                        </div>
+                        <div class="item tarif__item-progress">
+                            <p>Нагрузка 12.5%</p>
+                        </div>
+                        <div class="item tarif__item-price">
+                            <h3>219 ₽</h3>
+                        </div>
+                     </div>
+                     <div class="tarif__list-item">
+                        <div class="item tarif__item-name">
+                            <h1>Премиум хостинг</h1>
+                        </div>
+                        <div class="item tarif__item-mak">
+                            <h2>Мак-15</h2>
+                        </div>
+                        <div class="item tarif__item-gb">
+                            <p>15 ГБ на SSD</p>
+                        </div>
+                        <div class="item tarif__item-site">
+                            <p>15 cайтов</p>
+                        </div>
+                        <div class="item tarif__item-bd">
+                            <p>15 база данных</p>
+                        </div>
+                        <div class="item tarif__item-progress">
+                            <p>Нагрузка 25%</p>
+                        </div>
+                        <div class="item tarif__item-price">
+                            <h3>349 ₽</h3>
+                        </div>
+                     </div>
+                     <div class="tarif__list-item">
+                        <div class="item tarif__item-name">
+                            <h1>VPS Хостинг</h1>
+                        </div>
+                        <div class="item tarif__item-mak">
+                            <h2>Мак-30</h2>
+                        </div>
+                        <div class="item tarif__item-gb">
+                            <p>30 ГБ на SSD</p>
+                        </div>
+                        <div class="item tarif__item-site">
+                            <p>40 cайтов</p>
+                        </div>
+                        <div class="item tarif__item-bd">
+                            <p>40 баз данных</p>
+                        </div>
+                        <div class="item tarif__item-progress">
+                            <p>Нагрузка 50%</p>
+                        </div>
+                        <div class="item tarif__item-price">
+                            <h3>615 ₽</h3>
+                        </div>
+                     </div>
                 </div>
             </div>
         </div>
@@ -183,6 +227,11 @@
             </div>
              <form class="domen__search-form" action="#">
                 <input type="text" placeholder="Введите нужное доменное имя">
+                <div class="gran"></div>
+                <select class="form-domen" name="domen" id="domen">
+                    <option>.ru</option>
+                    <option>.com</option>
+                </select>
                 <button class="domen__search-btn"><img src="img/icons/%D0%91%D0%B5%D0%B7-%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8-1.png" alt=""> Найти</button>
             </form>
         </div>
