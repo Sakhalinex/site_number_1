@@ -223,12 +223,24 @@
     text-align: center;
     letter-spacing: 0.135em;
     color: #FFFFFF;
-    margin-top: 52%;
+    margin-top: 29.5%;
+}
+.intro__title--2 {
+    display: none;    
+}
+
+@media (max-width: 476px) {
+    .intro__title--2 {
+    display: block;    
+}
+    .intro__title--1 {
+    display: none;    
+}
 }
 
 .intro__btn {
-    width: 45%;
-    height: 86px;
+    width: calc(240px + 133 * (100vw / 1600));
+    height: calc(65px + 21 * (100vw / 1600));
     border: 2px solid #FFFFFF;
     box-sizing: border-box;
     background-color: rgba(0,0,0, 0);
@@ -258,18 +270,41 @@
 }
 .range__content {
     display: flex;
+    margin-top: 50px;
+}
+
+@media (max-width: 890px) {
+    .range__content {
+        flex-direction: column;
+    }
 }
 
 .range__sorting {
     width: calc(150px + 100 * (100vw / 1600));
 }
-
+@media (max-width: 890px) {
+    .range__sorting {
+        display: flex;
+        width: 100%!important;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
 
 .sorting__form {
     display: flex;
     align-items: center;
     margin-top: 116px;
 }
+
+@media (max-width: 890px) {
+    .sorting__form {
+        margin-top: 30px;
+        
+        
+    }
+}
+
 .sorting__icon-search {
     background: url(../img/main/icons/serch.png);
     width: 24px;
@@ -285,8 +320,24 @@
     max-width: 150px;
     margin-left: 15px;
 }
+@media (max-width: 890px) {
+    .sorting__search {
+        max-width: 100px;
+    }
+}
 .sorting__list {
     margin-top: 91px;
+    
+}
+@media (max-width: 890px) {
+    .sorting__list {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        width: 100%!important;
+        justify-content: space-between;
+    }
 }
 .sorting__item {
     margin-top: 86px;
@@ -305,6 +356,12 @@
         color:#4F4F4F;
     }
     }
+
+@media (max-width: 890px) {
+    .sorting__item {
+        margin: 0;
+    }
+}
         
 .sorting__link {
     font-size: 24px;
@@ -363,28 +420,38 @@
         color: #BEBEBE; 
     }
 }
-
+@media (max-width: 890px) {
+    .sorting__price {
+        display: none;
+    }
+}
 .range__list {
     display: flex;
     width: 100%;
     position: relative;
     padding-left: 20px;
     justify-content: center;
-    display: none;
+    padding-top: 100px;
+}
+
+@media (max-width: 890px) {
+    .range__list {
+        padding: 0!important;
+        margin-top: 20px;
+    }
 }
 
 .range__row {
     max-width: 325px;
+    margin: 0 40px;
+    
 }
 
-@media (max-width: 1492px) {
-    .more {
-    left: 57%;
-    transition: transform(-57%, 0);
-    transition: .3s;
+.range__row--4 {
+    margin-right: 0;
 }
-}
-@media (max-width: 1579px) {
+
+@media (max-width: 1300px) {
     .range__row--4 {
         display: none;
     }
@@ -393,7 +460,7 @@
     }
     
 }
-@media (max-width: 1244px) {
+@media (max-width: 890px) {
     .range__row--3 {
         display: none;
     }
@@ -408,14 +475,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 56px 40px;
     transition: .5s;
     max-width: 100%;
+//    margin: 56px 40px;
     &:hover {
         transform: scale(1.050);
         transition: .5s;
 
     }
+    
         
     .card__photo {
         max-width: 100%;
@@ -430,6 +498,7 @@
         letter-spacing: 0.135em;
         color: #4F4F4F;
         margin-top: 11px;
+        white-space: nowrap;
     }
     .article {
         margin-top: 18px;
@@ -457,10 +526,7 @@
 .more {
     text-align: center;
     margin-top: 81px;
-    position: absolute;
-    left: 55%;
-    transition: transform(-55%, 0); 
-     transition: .3s;
+    transition: .3s;
     .more__link {
         font-size: calc(8.5px + 9.5 * (100vw / 1600));
         line-height: 142.4%;
@@ -474,15 +540,11 @@
     }
     .more__icon {
         font-size: 30px;
-        margin-top: 10px;
+        margin-top: 14px;
     }
 }
-@media (max-width: 1492px) {
-    .more {
-    left: 57%;
-    transition: transform(-57%, 0);
-    transition: .3s;
-}
+@media (max-width: 890px) {
+    
 }
 
 /* SECTION
@@ -607,10 +669,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 373px;
-        height: 86px;
+        width: calc(240px + 133 * (100vw / 1600));
+        height: calc(65px + 21 * (100vw / 1600));
         border: 2px solid #313131;
-        font-size: 24px;
+        font-size: calc(11.3px + 12.7 * (100vw / 1600));
         line-height: 142.4%;
         letter-spacing: 0.1em;
         color: #646464;
@@ -639,6 +701,17 @@
     line-height: 28px;
     text-align: center;
     color: #707070;
+}
+.subscribe__text--2 {
+    display: none;
+}
+@media (max-width:536px){
+    .subscribe__text--1 {
+        display: none;
+    }
+    .subscribe__text--2 {
+    display: block;
+}
 }
 .subscribe__form {
     display: flex;
