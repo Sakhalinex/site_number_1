@@ -402,9 +402,13 @@
 }
 .range__row {
   max-width: 325px;
+  margin-right: 70px;
 }
-.range__row .card:first-child {
-  margin-top: 0;
+.range__row .card {
+  margin-bottom: 70px;
+}
+.range__row--1 {
+  margin-left: 70px;
 }
 @media (max-width: 1358px) {
   .range__row--4 {
@@ -428,7 +432,6 @@
   align-items: center;
   transition: 0.5s;
   max-width: 100%;
-  margin: 50px;
 }
 .card:hover {
   transform: scale(1.05);
