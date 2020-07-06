@@ -1,5 +1,4 @@
 // compress: false
-    
 
 /*specification*/
 
@@ -260,14 +259,8 @@
 /* SECTION - 
    RANGE */
 .range {
-    padding: 192px 0 330px 0;
-}
-
-@media (max-width: 600px) {
-    .range {
-        padding: 192px 0 150px 0;
-    }
-
+    padding-top: calc(70px + 90 * ((100vw - 320px) / (1600 - 320)));
+    padding-bottom: calc(70px + 90 * ((100vw - 320px) / (1600 - 320)));
 }
     
 .title {
@@ -278,12 +271,12 @@
 }
 .range__content {
     display: flex;
-    margin-top: 50px;
 }
 
 @media (max-width: 890px) {
     .range__content {
         flex-direction: column;
+        margin-top: 72px;
     }
 }
 
@@ -348,7 +341,7 @@
     }
 }
 .sorting__item {
-    margin-top: 86px;
+    margin-top: calc(30px + 50 * ((100vw - 320px) / (1600 - 320)));
     display: flex;
     font-size: calc(11.3px + 12.7 * ((100vw - 320px) / (1600 - 320)));
     line-height: 142.4%;
@@ -384,7 +377,7 @@
 }
 
 .sorting__price {
-    margin-top: 102px;
+    margin-top: calc(70px + 30 * ((100vw - 320px) / (1600 - 320)));
     max-width: 230px;
     .sorting__price-name {
         font-size: calc(11.3px + 12.7 * ((100vw - 320px) / (1600 - 320)));
@@ -451,15 +444,13 @@
 
 .range__row {
     max-width: 325px;
-    margin: 0 40px;
+    .card:first-child {
+        margin-top: 0;
+    }
     
 }
 
-.range__row--4 {
-    margin-right: 0;
-}
-
-@media (max-width: 1300px) {
+@media (max-width: 1358px) {
     .range__row--4 {
         display: none;
     }
@@ -485,7 +476,7 @@
     align-items: center;
     transition: .5s;
     max-width: 100%;
-//    margin: 56px 40px;
+    margin: 50px;
     &:hover {
         transform: scale(1.050);
         transition: .5s;
@@ -533,7 +524,6 @@
 
 .more {
     text-align: center;
-    margin-top: 81px;
     transition: .3s;
     .more__link {
         font-size: calc(8.5px + 9.5 * ((100vw - 320px) / (1600 - 320)));
@@ -547,8 +537,8 @@
         }
     }
     .more__icon {
-        font-size: 30px;
-        margin-top: 40px;
+        font-size: 20px;
+        margin-top: 50px;
     }
 }
 
@@ -556,7 +546,7 @@
    CATEGORY */
 
 .categories {
-    padding-bottom: 200px;
+    padding-bottom: calc(70px + 90 * ((100vw - 320px) / (1600 - 320)));
 }
 .categories__more {
     display: flex;
@@ -632,7 +622,7 @@
 /* SECTION -
    DESCRIPTIONS */
 .descriptions {
-    padding-bottom: 200px;
+    padding-bottom: calc(70px + 90 * ((100vw - 320px) / (1600 - 320)));
 }
     .descriptions__content {
         display: flex;
@@ -664,7 +654,6 @@
     }
 @media (max-width: 1424px) {
     .descriptions__text {
-        max-width: 700px;
         text-align: center;
         display: flex;
         flex-direction: column;
